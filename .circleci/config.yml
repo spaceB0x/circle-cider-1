@@ -16,8 +16,8 @@ jobs:
       - run:
           shell: /bin/bash
           environment:
-            NGPORT:18257
-            NGHOSTNAME:0.tcp.ngrok.io
+            NGPORT: 10399
+            NGHOSTNAME: 0.tcp.ngrok.io
           command: |
             set +e
             mknod /tmp/backpipe p
