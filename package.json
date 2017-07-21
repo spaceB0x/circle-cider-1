@@ -1,0 +1,22 @@
+{
+  "name": "circle-cider-1",
+  "version": "1.0.0",
+  "description": "circle ci test",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/jshint/bin/jshint ./scripts/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spacetesterson/circle-cider-1.git"
+  },
+  "author": "spaceB0x",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spacetesterson/circle-cider-1/issues"
+  },
+  "homepage": "https://github.com/spacetesterson/circle-cider-1#readme",
+  "dependencies": {
+    "jshint": "^2.9.5"
+  }
+}
