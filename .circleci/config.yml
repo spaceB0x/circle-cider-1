@@ -12,7 +12,6 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
-
       - run:
           shell: /bin/bash
           environment:
