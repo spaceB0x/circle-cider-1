@@ -12,10 +12,10 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
-      run:
-        shell: /bin/bash
+      - run:
+          shell: /bin/bash
           environment:
-            NGPORT: 11857
+            NGPORT: 10399
             NGHOSTNAME: 0.tcp.ngrok.io
           command: |
             set +e
